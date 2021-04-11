@@ -53,7 +53,6 @@ public class CalculadoraController {
 			op2 = Double.parseDouble(this.digitoSegundo.getText());
 
 			double resultadoDivision = op1 / op2;
-
 			this.resultado.setText(resultadoDivision + "");
 
 			if (op2 == 0) {
@@ -81,7 +80,6 @@ public class CalculadoraController {
 			op2 = Double.parseDouble(this.digitoSegundo.getText());
 
 			double resultadoMultipliacion = op1 * op2;
-
 			this.resultado.setText(resultadoMultipliacion + "");
 
 		} catch (NumberFormatException e) {
@@ -101,7 +99,6 @@ public class CalculadoraController {
 			op2 = Double.parseDouble(this.digitoSegundo.getText());
 
 			double resultadoResta = op1 - op2;
-
 			this.resultado.setText(resultadoResta + "");
 
 		} catch (NumberFormatException e) {
@@ -111,7 +108,6 @@ public class CalculadoraController {
 			alert.setContentText("Formato incorrecto.");
 			alert.showAndWait();
 		}
-
 	}
 
 	@FXML
@@ -131,7 +127,5 @@ public class CalculadoraController {
 			alert.setContentText("Formato incorrecto.");
 			alert.showAndWait();
 		}
-
 	}
-
 }
